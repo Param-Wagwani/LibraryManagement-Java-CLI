@@ -86,9 +86,7 @@ public class Transaction implements Serializable{
 		return getNumOfDays(this.issueDate, returnDate);
 	}
 
-	private int getNumOfDays(){
-		return getNumOfDays(this.issueDate, this.returnDate);
-	}
+	
 
 	private static int getNumOfDays(Date issueDate, Date returnDate){	
 		long diff = returnDate.getTime() - issueDate.getTime();
